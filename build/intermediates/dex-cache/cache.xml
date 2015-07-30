@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\osmdroid-android-4.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f3a0c73a9ed04a5d0959789c53da9f08462bfcc2">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-d6edf7132b25ba2a17c1d003066cf8d5fb488fed.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-57b9fbe101aa767664671ffa43ddbf1cc85a5bbb.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\jcoord-1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d10944084bf19d6e97ad82ba9eebd7a9440cdec9">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\jcoord-1.0-e759d24405ef951afe9cd162baa495dea78250eb.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-3bca15f15c33defdb555188f72fab5a3656e509d.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-70eeea15789b4f85295def7f29ecb1211280d233.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-57b9fbe101aa767664671ffa43ddbf1cc85a5bbb.jar" />
+    </item>
+    <item
+        jar="F:\Progs\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-0ef3dc71f3371d505bf47c6771c943a3800aed69.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-a986d5bf8fbb085fc5d8dbd4334ab903b529679d.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a0b527e8aabcc1f1e97d1674dc3f4f0794ec5df1">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-154895841d642886758e9a2af920e12e491b4af1.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-3bca15f15c33defdb555188f72fab5a3656e509d.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\jcoord-1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d10944084bf19d6e97ad82ba9eebd7a9440cdec9">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\jcoord-1.0-e759d24405ef951afe9cd162baa495dea78250eb.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\osmdroid-android-4.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f3a0c73a9ed04a5d0959789c53da9f08462bfcc2">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-d6edf7132b25ba2a17c1d003066cf8d5fb488fed.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\libs\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a0b527e8aabcc1f1e97d1674dc3f4f0794ec5df1">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-154895841d642886758e9a2af920e12e491b4af1.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-70eeea15789b4f85295def7f29ecb1211280d233.jar" />
+    </item>
+    <item
+        jar="F:\Progs\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-0ef3dc71f3371d505bf47c6771c943a3800aed69.jar" />
+    </item>
+    <item
+        jar="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="E:\School\SE2\LocationUpdates\LocationUpdates\app\build\intermediates\pre-dexed\debug\classes-a986d5bf8fbb085fc5d8dbd4334ab903b529679d.jar" />
+    </item>
+
+</items>
