@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2014 Google, Inc
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <string name="app_name">heidi</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="latitude_label">Latitude: </string>
+    <string name="longitude_label">Longitude: </string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+
+    <string name="last_update_time_label">Last location update time: </string>
+
+    <string name="location_updated_message">Location updated</string>
+
+    <string name="textViewHoehe">Show height</string>
+    <string name="hoehe_text">Show height</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <string name="hello_camera">Hello Camera!</string>
+    <string name="title_activity_camera__intent">Camera_Intent</string>
+
+    <string name="x">x</string>
+    <string name="y">y</string>
+    <string name="z">z</string>
+
+    <string name="progressBar_x">progressbar_y</string>
+    <string name="progressBar_y">progressbar_y</string>
+    <string name="progressBar_z">progressbar_y</string>
+
+    <string name="buttonStart">start</string>
+    <string name="buttonStop">stop</string>
+
+    <string name="buttonMain">Go to Main</string>
+    <string name="buttonMap">Go to Map</string>
+
+    <string name="loc1angle1">First Angle</string>
+    <string name="title_activity_gps_activity">gps_activity</string>
+
+    <string name="temperature">Temperatur</string>
+    <string name="humidity">Feuchtigkeit</string>
+    <string name="title_activity_crud">CRUD</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_googlemaps">googlemaps</string>
+    <string name="title_activity_gpxdata">GPXData</string>
+
+    <string name="title_activity_start">StartActivity</string>
+
+    <string name="button_map">map</string>
+    <string name="button_sensortest">Sensortest</string>
+    <string name="button_media">media</string>
+    <string name="button_routen">Routen</string>
+    <string name="button_login">Login</string>
+
+    <string name="button_allg_routen">allgeimeine \nRouten</string>
+    <string name="button_eig_routen">eigene \nRouten</string>
+    <string name="button_fave_routen">fave \nRouten</string>
+    <string name="button_create_routen">Route \nerstellen</string>
+    <string name="button_level">Schwierig-\nkeitsgrad</string>
+
+    <string name="button_Laender">LÃ¤nder</string>
+    <string name="title_activity_routen">Routen</string>
+    <string name="title_activity_login">Login</string>
+
+
+</resources>

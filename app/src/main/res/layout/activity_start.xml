@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.google.android.gms.location.sample.locationupdates.StartActivity">
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_routen"
+        android:onClick="goToRoutes"
+        android:id="@+id/button_routen"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/button_sensortest" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sensortest"
+        android:onClick="goToSensorTest"
+        android:id="@+id/button_sensortest"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_routen"
+        android:layout_alignStart="@+id/button_routen" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_login"
+        android:onClick="goToLogin"
+        android:id="@+id/button_login"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_above="@+id/button_map"
+        android:layout_alignLeft="@+id/button_map"
+        android:layout_alignStart="@+id/button_map"
+        android:layout_marginBottom="30dp" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="goToMap"
+        android:text="@string/button_map"
+        android:id="@+id/button_map"
+        android:textColor="#ffffffff"
+        android:background="#ff000000"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/button_routen"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:onClick="close"
+        android:id="@+id/button_close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff770045" />
+
+</RelativeLayout>

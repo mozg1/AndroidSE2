@@ -1,0 +1,33 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.google.android.gms.location.sample.locationupdates"
+        minSdkVersion 9
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile files('F:/School/SE2/LocationUpdates/LocationUpdates/libs/jcoord-1.0.jar')
+    compile files('F:/School/SE2/LocationUpdates/LocationUpdates/libs/jcoord-1.1-b.jar')
+    compile files('F:/School/SE2/LocationUpdates/LocationUpdates/libs/osmdroid-android-4.2.jar')
+    compile files('F:/School/SE2/LocationUpdates/LocationUpdates/libs/slf4j-android-1.6.1-RC1.jar')
+    compile files('E:/School/SE2/LocationUpdates/LocationUpdates/libs/jcoord-1.0.jar')
+    compile files('E:/School/SE2/LocationUpdates/LocationUpdates/libs/osmdroid-android-4.2.jar')
+    compile files('E:/School/SE2/LocationUpdates/LocationUpdates/libs/slf4j-android-1.6.1-RC1.jar')
+}

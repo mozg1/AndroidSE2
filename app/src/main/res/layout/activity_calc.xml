@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.google.android.gms.location.sample.locationupdates.CalcActivity">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Progressbar X -->
+    <TextView
+        android:id="@+id/TextView_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x"
+        android:layout_alignTop="@+id/progressBar_x"
+        android:layout_toLeftOf="@+id/progressBar_y"
+        android:layout_toStartOf="@+id/progressBar_y" />
+    <ProgressBar
+        android:id="@+id/progressBar_x"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="250dip"
+
+        android:layout_alignLeft="@+id/progressBar_y"
+        android:layout_alignStart="@+id/progressBar_y"
+        android:layout_marginTop="19dp" />
+
+    <!-- Progressbar Y -->
+    <TextView
+        android:id="@+id/TextView_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_x"
+        android:text="@string/y" />
+    <ProgressBar
+        android:id="@+id/progressBar_y"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TextView_y"
+        android:layout_below="@+id/progressBar_x"
+        android:layout_marginLeft="20dp"
+        android:minWidth="250dip" />
+
+    <!-- Progressbar Z -->
+    <TextView
+        android:id="@+id/TextView_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_y"
+        android:text="@string/z" />
+    <ProgressBar
+        android:id="@+id/progressBar_z"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TextView_z"
+        android:layout_below="@+id/progressBar_y"
+        android:layout_marginLeft="20dp"
+        android:minWidth="250dip" />
+
+    <!-- onClick-StartButton -->
+    <Button
+        android:id="@+id/buttonStart"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonStart"
+        android:onClick="startRecording"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/TextView_z"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!-- onClick-StopButton -->
+    <Button
+        android:id="@+id/buttonStop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonStop"
+        android:onClick="stopRecording"
+        android:layout_alignTop="@+id/buttonStart"
+        android:layout_toRightOf="@+id/buttonStart"
+        android:layout_toEndOf="@+id/buttonStart" />
+
+    <!-- onClick-NavButton -->
+    <Button
+        android:id="@+id/buttonMain"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMain"
+        android:onClick="goToMain"
+        android:layout_alignTop="@+id/buttonStop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Location 1 Angle 1 -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc1angle1"
+        android:inputType="numberDecimal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonStop"
+        android:layout_alignEnd="@+id/buttonStop"
+        android:imeOptions="actionNext"
+        android:hint="loc1Angle1" />
+
+    <!-- Location 1 Angle 2 -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc1angle2"
+        android:inputType="numberDecimal"
+        android:layout_alignTop="@+id/loc1angle1"
+        android:layout_toRightOf="@+id/loc1angle1"
+        android:layout_toLeftOf="@+id/buttonMain"
+        android:layout_toStartOf="@+id/buttonMain"
+        android:imeOptions="actionNext"
+        android:hint="loc1Angle2" />
+
+    <!-- Location 2 Angle 1 -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc2angle1"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/loc1angle1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp"
+        android:layout_alignRight="@+id/buttonStop"
+        android:layout_alignEnd="@+id/buttonStop"
+        android:imeOptions="actionNext"
+        android:hint="loc2Angle1" />
+
+    <!-- Location 2 Angle 2 -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc2angle2"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:hint="loc2Angle2"
+        android:layout_alignTop="@+id/loc2angle1"
+        android:layout_alignLeft="@+id/loc1angle2"
+        android:layout_alignStart="@+id/loc1angle2" />
+
+    <!-- Luftlinielabel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luftlinie:"
+        android:id="@+id/luftlinie_label"
+        android:layout_alignTop="@+id/distanceValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Show Distance Value -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/distanceValue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/loc2angle2"
+        android:layout_alignEnd="@+id/loc2angle2"
+        android:layout_toRightOf="@+id/buttonStart"
+        android:layout_toEndOf="@+id/buttonStart"
+        android:layout_below="@+id/loc2angle1" />
+
+    <!-- Calculate-Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="getDistance"
+        android:id="@+id/calculate_button"
+        android:layout_above="@+id/loc2angle2"
+        android:layout_toRightOf="@+id/loc2angle2"
+        android:layout_toEndOf="@+id/loc2angle2" />
+
+
+</RelativeLayout>
