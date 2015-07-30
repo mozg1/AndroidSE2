@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 Google, Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding">
+
+    <!-- Start Updates -->
+    <Button
+        android:id="@+id/start_updates_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/ui_group_top_margin"
+        android:onClick="startUpdatesButtonHandler"
+        android:text="@string/start_updates" />
+
+    <!-- Stop Updates -->
+    <Button
+        android:id="@+id/stop_updates_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/ui_group_top_margin"
+        android:enabled="false"
+        android:onClick="stopUpdatesButtonHandler"
+        android:text="@string/stop_updates" />
+
+    <!-- Latitudelabel -->
+    <TextView
+        android:id="@+id/latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_updates_button"
+        android:layout_marginTop="@dimen/ui_group_top_margin"
+        android:text="@string/latitude_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <!-- Latitude - Value -->
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latitude_label"
+        android:layout_marginLeft="@dimen/small_margin_left"
+        android:layout_toRightOf="@+id/latitude_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <!-- Longtitudelabel -->
+    <TextView
+        android:id="@+id/longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/latitude_label"
+        android:text="@string/longitude_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <!-- Longtitude - Value -->
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longitude_label"
+        android:layout_marginLeft="@dimen/small_margin_left"
+        android:layout_toRightOf="@+id/longitude_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <!-- Update Time -->
+    <TextView
+        android:id="@+id/last_update_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/longitude_label"
+        android:text="@string/last_update_time_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <TextView
+        android:id="@+id/last_update_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/last_update_time_label"
+        android:layout_marginLeft="@dimen/small_margin_left"
+        android:layout_toRightOf="@+id/last_update_time_label"
+        android:textSize="@dimen/default_text_size" />
+
+    <!-- Update Period -->
+     <RadioGroup
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/radioInterval"
+         android:layout_below="@+id/textViewLuftdruck"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_marginTop="84dp">
+
+         <!-- Duration -->
+
+     </RadioGroup>
+
+    <!-- Luftdrucklabel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luftdruck:"
+        android:id="@+id/textViewLuftdruck"
+        android:layout_below="@+id/last_update_time_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Luftdruck - Value -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/luftdruck_text"
+        android:layout_alignTop="@+id/textViewLuftdruck"
+        android:layout_alignLeft="@+id/longitude_text"
+        android:layout_alignStart="@+id/longitude_text" />
+
+    <!-- Heightlabel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoehe:"
+        android:id="@+id/textViewHoehe"
+        android:layout_below="@+id/textViewLuftdruck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Height - Value -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hoehe_text"
+        android:layout_alignTop="@+id/textViewHoehe"
+        android:layout_alignLeft="@+id/longitude_text"
+        android:layout_alignStart="@+id/longitude_text" />
+
+    <!-- LatLng Label -->
+    <TextView
+        android:id="@+id/labelLatLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS     "
+        android:layout_below="@+id/radioInterval"
+        android:layout_alignRight="@+id/textViewHoehe"
+        android:layout_alignEnd="@+id/textViewHoehe"
+        android:layout_marginTop="25dp" />
+
+    <!-- LatLng Value -->
+    <TextView
+        android:id="@+id/textLatLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/labelUTM"
+        android:layout_alignLeft="@+id/textUTM"
+        android:text="unknown" />
+
+    <!-- UTM Label -->
+    <TextView
+        android:id="@+id/labelUTM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelLatLng"
+        android:layout_below="@+id/labelLatLng"
+        android:layout_marginTop="18dp"
+        android:text="UTM     " />
+
+    <!-- UTM Value -->
+    <TextView
+        android:id="@+id/textUTM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelUTM"
+        android:layout_alignBottom="@+id/labelUTM"
+        android:layout_toRightOf="@+id/labelUTM"
+        android:text="unknown" />
+
+    <!-- onClick-NavButton -->
+    <Button
+        android:id="@+id/buttonMap"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonMap"
+        android:onClick="goToMap"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignRight="@+id/stop_updates_button"
+        android:layout_alignEnd="@+id/stop_updates_button" />
+
+    <!-- Aktualisierungszeitraum -->
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Minute"
+        android:id="@+id/radioButton1"
+        android:checked="true"
+        android:layout_below="@+id/textViewHoehe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!-- Fechtigkeitslabel -->
+    <TextView
+        android:id="@+id/textHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="26dp"
+        android:text="@string/humidity"
+        android:layout_below="@+id/textTemperature"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Temperaturlabel -->
+    <TextView
+        android:id="@+id/textTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="48dp"
+        android:text="@string/temperature"
+        android:layout_below="@+id/labelUTM"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Temperaturanzeige -->
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBaseline="@+id/textTemperature"
+        android:layout_alignBottom="@+id/textTemperature"
+        android:layout_marginLeft="64dp"
+        android:layout_toRightOf="@+id/textTemperature"
+        android:text="/" />
+
+    <!-- Fechtigkeitsanzeige -->
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBaseline="@+id/textHumidity"
+        android:layout_alignBottom="@+id/textHumidity"
+        android:layout_alignLeft="@+id/textViewTemperature"
+        android:text="/" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Calc"
+        android:onClick="goToCalc"
+        android:id="@+id/button_calc"
+        android:layout_above="@+id/textTemperature"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
